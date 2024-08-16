@@ -1,6 +1,7 @@
 import { hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
+import {Link} from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -28,9 +29,9 @@ const Nav = () => {
           ))}
         </ul>
         <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
-          <a href='/'  className="hover:font-semibold transition	duration-500 	">Sign in</a>
+          <Link to="/login"  className="hover:font-semibold transition	duration-500 	">Login</Link>
           <span> / </span>
-          <a href='/' className="hover:font-semibold transition	duration-500	">Sign up</a>
+          <Link to="/signup" className="hover:font-semibold transition	duration-500	">Sign up</Link>
         </div>
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />
