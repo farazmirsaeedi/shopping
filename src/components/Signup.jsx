@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom"
+import { toast } from 'react-toastify';
+
 const SignUp = () => {
+    const navigate = useNavigate();
+    const handleSubmit = () => {
+        toast.success("Login Successed")
+        navigate("/");
+    }
     return (
         <>
             <div className="w-screen h-screen flex justify-center items-center bg-orange-100">
@@ -11,6 +19,7 @@ const SignUp = () => {
                         <input className=" border border-orange-400 rounded-md p-1" id="Password" type="text" />
                     </div>
                     <button
+                        onClick={handleSubmit}
                         className="w-full mt-6 bg-orange-400 hover:bg-orange-500 transition duration-100 rounded-md text-white uppercase p-2 ">
                             SignUp</button>
                 </div>
