@@ -52,7 +52,7 @@ const Hero = () => {
           alt="shoe colletion"
           width={610}
           height={502}
-          className={`object-contain relative z-10 transition-opacity delay-1000 duration-1000 ${fade? "opacity-0" : "opacity-100"}`}
+          className={`object-contain relative z-10 transition-opacity  duration-1000 ${fade? "opacity-50" : "opacity-100"}`}
         />
 
         <div className="flex sm:gap-6 gap-5 absolute -bottom-[5%] sm:left-[20%] max-sm:px-6">
